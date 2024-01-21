@@ -1,6 +1,7 @@
 package net.lledely.rpg;
 
 import com.mojang.logging.LogUtils;
+import net.lledely.rpg.block.ModBlocks;
 import net.lledely.rpg.item.ModCreativeModTabs;
 import net.lledely.rpg.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -26,6 +27,7 @@ public class RPGFunny {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -38,10 +40,7 @@ public class RPGFunny {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-            event.accept(ModItems.RUSTED_SHIELD);
-            event.accept(ModItems.SHABBY_BOW);
-        }
+
     }
 
     @SubscribeEvent
