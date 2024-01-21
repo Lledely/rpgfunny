@@ -1,6 +1,7 @@
 package net.lledely.rpg;
 
 import com.mojang.logging.LogUtils;
+import net.lledely.rpg.item.ModCreativeModTabs;
 import net.lledely.rpg.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -21,6 +22,8 @@ public class RPGFunny {
 
     public RPGFunny() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 
