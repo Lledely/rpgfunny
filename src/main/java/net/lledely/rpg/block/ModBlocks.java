@@ -23,6 +23,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> UPGRADE_TABLE = registerBlock("upgrade_table",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CHEST).sound(SoundType.METAL)));
 
+    public static final RegistryObject<Block> WAYPOINT = registerBlock("waypoint",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN).sound(SoundType.AMETHYST)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

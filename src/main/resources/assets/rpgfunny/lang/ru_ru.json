@@ -1,6 +1,9 @@
 {
   "item.rpgfunny.rusted_shield": "Ржавый щит",
   "item.rpgfunny.shabby_bow": "Потрепанный лук",
+
   "block.rpgfunny.upgrade_table": "Стол улучшений",
+  "block.rpgfunny.waypoint": "Путеводный камень",
+
   "creativetab.rpg_tab": "Весёлое РПГ"
 }

@@ -1,6 +1,9 @@
 {
   "item.rpgfunny.rusted_shield": "Rusted Shield",
   "item.rpgfunny.shabby_bow": "Shabby Bow",
+
   "block.rpgfunny.upgrade_table": "Upgrade Table",
+  "block.rpgfunny.waypoint": "Waypoint Stone",
+
   "creativetab.rpg_tab": "RPGFunny"
 }
