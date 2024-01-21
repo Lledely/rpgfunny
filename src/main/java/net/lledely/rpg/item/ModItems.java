@@ -12,7 +12,10 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, RPGFunny.MOD_ID);
 
-    public static final RegistryObject<Item> SAY_GEX = ITEMS.register("say_gex",
+    public static final RegistryObject<Item> RUSTED_SHIELD = ITEMS.register("rusted_shield",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SHABBY_BOW = ITEMS.register("shabby_bow",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

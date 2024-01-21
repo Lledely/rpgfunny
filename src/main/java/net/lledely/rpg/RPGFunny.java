@@ -36,7 +36,8 @@ public class RPGFunny {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-            event.accept(ModItems.SAY_GEX);
+            event.accept(ModItems.RUSTED_SHIELD);
+            event.accept(ModItems.SHABBY_BOW);
         }
     }
 
