@@ -1,6 +1,11 @@
 {
   "item.rpgfunny.rusted_shield": "Ржавый щит",
   "item.rpgfunny.shabby_bow": "Потрепанный лук",
+  "item.rpgfunny.holy_water_bottle": "Старый бутыль со святой водой",
+  "item.rpgfunny.rusty_pickaxe": "Ржавая кирка",
+  "item.rpgfunny.dull_axe": "Затупленный топор",
+  "item.rpgfunny.cracked_hoe": "Треснутая мотыга",
+  "item.rpgfunny.old_collar": "Старый ошейник",
 
   "block.rpgfunny.upgrade_table": "Стол улучшений",
   "block.rpgfunny.waypoint": "Путеводный камень",

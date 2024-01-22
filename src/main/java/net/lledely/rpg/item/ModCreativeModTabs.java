@@ -21,6 +21,11 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.RUSTED_SHIELD.get());
                         pOutput.accept(ModItems.SHABBY_BOW.get());
+                        pOutput.accept(ModItems.HOLY_WATER_BATTLE.get());
+                        pOutput.accept(ModItems.RUSTY_PICKAXE.get());
+                        pOutput.accept(ModItems.DULL_AXE.get());
+                        pOutput.accept(ModItems.CRACKED_HOE.get());
+                        pOutput.accept(ModItems.OLD_COLLAR.get());
 
                         pOutput.accept(ModBlocks.UPGRADE_TABLE.get());
                         pOutput.accept(ModBlocks.WAYPOINT.get());

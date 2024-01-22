@@ -18,6 +18,21 @@ public class ModItems {
     public static final RegistryObject<Item> SHABBY_BOW = ITEMS.register("shabby_bow",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> HOLY_WATER_BATTLE = ITEMS.register("holy_water_bottle",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RUSTY_PICKAXE = ITEMS.register("rusty_pickaxe",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> DULL_AXE = ITEMS.register("dull_axe",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CRACKED_HOE = ITEMS.register("cracked_hoe",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> OLD_COLLAR = ITEMS.register("old_collar",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
