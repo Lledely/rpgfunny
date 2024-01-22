@@ -19,6 +19,7 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RUSTED_SHIELD.get()))
                     .title(Component.translatable("creativetab.rpg_tab"))
                     .displayItems((pParameters, pOutput) -> {
+                        pOutput.accept(ModItems.DARK_DIAMOND.get());
                         pOutput.accept(ModItems.RUSTED_SHIELD.get());
                         pOutput.accept(ModItems.SHABBY_BOW.get());
                         pOutput.accept(ModItems.HOLY_WATER_BATTLE.get());

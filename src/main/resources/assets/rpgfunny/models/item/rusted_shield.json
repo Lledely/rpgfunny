@@ -1,6 +1,18 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "rpgfunny:item/rusted_shield"
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "rpgfunny:item/rusted_shield_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "rpgfunny:item/rusted_shield_3d"
+    },
+    "ground": {
+      "parent": "rpgfunny:item/rusted_shield_3d"
+    },
+    "fixed": {
+      "parent": "rpgfunny:item/rusted_shield_3d"
+    }
   }
 }
