@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.8,
+  "group": "dark_diamond",
+  "ingredient": {
+    "item": "rpgfunny:dark_diamond_ore"
+  },
+  "result": "rpgfunny:dark_diamond"
+}

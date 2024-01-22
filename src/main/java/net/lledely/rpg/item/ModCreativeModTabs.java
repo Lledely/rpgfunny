@@ -30,6 +30,7 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.UPGRADE_TABLE.get());
                         pOutput.accept(ModBlocks.WAYPOINT.get());
+                        pOutput.accept(ModBlocks.DARK_DIAMOND_ORE.get());
                     })
                     .build());
 

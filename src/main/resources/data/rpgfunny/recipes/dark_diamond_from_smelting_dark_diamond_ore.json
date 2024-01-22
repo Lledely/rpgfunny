@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 1.5,
+  "group": "dark_diamond",
+  "ingredient": {
+    "item": "rpgfunny:dark_diamond_ore"
+  },
+  "result": "rpgfunny:dark_diamond"
+}

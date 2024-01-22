@@ -2,10 +2,12 @@ package net.lledely.rpg.block;
 
 import net.lledely.rpg.RPGFunny;
 import net.lledely.rpg.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -25,6 +27,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> WAYPOINT = registerBlock("waypoint",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN).sound(SoundType.AMETHYST)));
+
+    public static final RegistryObject<Block> DARK_DIAMOND_ORE = registerBlock("dark_diamond_ore",
+            ()-> new DropExperienceBlock(UniformInt.of(6, 8),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+                                .strength(2.2f)
+                                .requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
