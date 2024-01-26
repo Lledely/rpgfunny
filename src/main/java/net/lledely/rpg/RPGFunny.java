@@ -2,6 +2,7 @@ package net.lledely.rpg;
 
 import com.mojang.logging.LogUtils;
 import net.lledely.rpg.block.ModBlocks;
+import net.lledely.rpg.effect.ModEffects;
 import net.lledely.rpg.item.ModCreativeModTabs;
 import net.lledely.rpg.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -28,6 +29,8 @@ public class RPGFunny {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModEffects.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

@@ -1,5 +1,6 @@
 package net.lledely.rpg.item.custom;
 
+import net.lledely.rpg.effect.ModEffects;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
@@ -37,7 +38,7 @@ public class RustedShieldItem extends Item {
         assert player != null;
         player.getCooldowns().addCooldown(this, USE_COOLDOWN);
 
-        player.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE,
+        player.addEffect(new MobEffectInstance(ModEffects.REFRACTION.get(),
                 RESISTANCE_DURATION,
                 5,
                 true,
