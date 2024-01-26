@@ -1,6 +1,7 @@
 package net.lledely.rpg.item;
 
 import net.lledely.rpg.RPGFunny;
+import net.lledely.rpg.item.custom.RustedShieldItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,7 +17,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> RUSTED_SHIELD = ITEMS.register("rusted_shield",
-            () -> new Item(new Item.Properties().stacksTo(1)));
+            () -> new RustedShieldItem(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> SHABBY_BOW = ITEMS.register("shabby_bow",
             () -> new Item(new Item.Properties().stacksTo(1)));
