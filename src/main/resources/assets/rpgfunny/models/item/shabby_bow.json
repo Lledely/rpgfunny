@@ -1,6 +1,18 @@
 {
-  "parent": "item/handheld",
-  "textures": {
-    "layer0": "rpgfunny:item/shabby_bow"
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "rpgfunny:item/shabby_bow_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "rpgfunny:item/shabby_bow_3d"
+    },
+    "ground": {
+      "parent": "rpgfunny:item/shabby_bow_3d"
+    },
+    "fixed": {
+      "parent": "rpgfunny:item/shabby_bow_3d"
+    }
   }
 }

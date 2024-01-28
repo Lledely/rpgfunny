@@ -22,6 +22,9 @@ public class ModItems {
     public static final RegistryObject<Item> SHABBY_BOW = ITEMS.register("shabby_bow",
             () -> new Item(new Item.Properties().stacksTo(1)));
 
+    public static final RegistryObject<Item> WOODEN_SWORD = ITEMS.register("wooden_sword",
+            () -> new Item(new Item.Properties().stacksTo(1)));
+
     public static final RegistryObject<Item> HOLY_WATER_BATTLE = ITEMS.register("holy_water_bottle",
             () -> new Item(new Item.Properties().stacksTo(1)));
 

@@ -1,7 +1,8 @@
-package net.lledely.rpg.item;
+package net.lledely.rpg;
 
 import net.lledely.rpg.RPGFunny;
 import net.lledely.rpg.block.ModBlocks;
+import net.lledely.rpg.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,6 +22,7 @@ public class ModCreativeModTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.DARK_DIAMOND.get());
                         pOutput.accept(ModItems.RUSTED_SHIELD.get());
+                        pOutput.accept(ModItems.WOODEN_SWORD.get());
                         pOutput.accept(ModItems.SHABBY_BOW.get());
                         pOutput.accept(ModItems.HOLY_WATER_BATTLE.get());
                         pOutput.accept(ModItems.RUSTY_PICKAXE.get());
