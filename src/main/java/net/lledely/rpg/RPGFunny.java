@@ -33,6 +33,8 @@ public class RPGFunny {
 
         modEventBus.addListener(this::commonSetup);
 
+        MinecraftForge.EVENT_BUS.register(ModEventHandler.class);
+
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
